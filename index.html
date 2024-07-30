@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tip.css" />
+  </head>
+  <body class="body">
+    <div class="titleContainer">
+      <div class="title">SPLI</div>
+      <div class="title">TTER</div>
+    </div>
+    <div class="calculatorContainer">
+      <form class="form" id="form">
+        <div class="inputContainer">
+          <div class="billContainer">
+            <label for="bill" class="billLabel">Bill</label>
+            <input
+              id="bill"
+              type="number"
+              name="bill"
+              class="billInput"
+              style="color: hsl(183, 100%, 15%)"
+              min="0.01"
+              step="0.01"
+            />
+          </div>
+          <div class="selectContainer">
+            <div class="selectLabel">Select Tip %</div>
+            <div class="buttonsContainer">
+              <button class="buttonTip" type="button" data-tip="0.05">
+                5%
+              </button>
+              <button class="buttonTip" type="button" data-tip="0.1">
+                10%
+              </button>
+              <button class="buttonTip" type="button" data-tip="0.15">
+                15%
+              </button>
+              <button class="buttonTip" type="button" data-tip="0.25">
+                25%
+              </button>
+              <button class="buttonTip" type="button" data-tip="0.5">
+                50%
+              </button>
+              <input
+                class="customInput"
+                id="custom"
+                type="number"
+                name="custom"
+                placeholder="Custom"
+                min="1"
+                step="1"
+              />
+            </div>
+          </div>
+          <div class="peopleContainer">
+            <label class="peopleLabel" for="nrPeople">Number of People</label>
+            <input
+              class="peopleInput"
+              id="nrPeople"
+              type="number"
+              min="1"
+              step="1"
+            />
+          </div>
+        </div>
+        <div class="resultContainer">
+          <div class="resultTextContainer">
+            <div class="tipPersonContainer">
+              <div class="tipPersonLabel">
+                <div class="resultlabel">Tip Amount</div>
+                <div class="person">/ person</div>
+              </div>
+              <div class="result" id="tip">$0.00</div>
+            </div>
+            <div class="totalPerPersonContainer">
+              <div class="totalPersonLabel">
+                <div class="resultlabel">Total</div>
+                <div class="person">/ person</div>
+              </div>
+              <div class="result" id="total">$0.00</div>
+            </div>
+          </div>
+          <button class="reset" type="reset">RESET</button>
+        </div>
+      </form>
+    </div>
+    <script src="tip.js"></script>
+  </body>
+</html>

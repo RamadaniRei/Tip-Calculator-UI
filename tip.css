@@ -1,0 +1,417 @@
+@media (max-width: 48em) {
+  .body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  }
+  .title {
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+  }
+
+  .calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 50px;
+  }
+
+  .billContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .billLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+
+  .billInput {
+    padding: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    border-radius: 5px;
+    background-image: url("images/icon-dollar.svg");
+    background-size: 12px 12px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    color: hsl(183, 100%, 15%);
+    outline-color: hsl(172, 67%, 45%);
+    text-align: right;
+    font-family: "Space Mono", monospace;
+  }
+
+  .selectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selectLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  .buttonsContainer {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .buttonTip {
+    padding: 5px 10px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonTip.selected {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  .customInput {
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline-color: hsl(172, 67%, 45%);
+    text-align: right;
+    font-family: "Space Mono", monospace;
+  }
+
+  .peopleContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .peopleLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 30px;
+  }
+  .peopleInput {
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    padding: 10px;
+    background-image: url("images/icon-person.svg");
+    background-size: 12px 12px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    outline-color: hsl(172, 67%, 45%);
+    text-align: right;
+    font-family: "Space Mono", monospace;
+    color: hsl(183, 100%, 15%);
+  }
+
+  .resultContainer {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .resultTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tipPersonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .tipPersonLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .resultlabel {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .person {
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+    font-size: 9px;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .totalPerPersonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .totalPersonLabel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reset {
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+  }
+}
+
+@media (min-width: 48em) {
+  .body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+  }
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  }
+  .title {
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+  }
+
+  .calculatorContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    justify-content: space-between;
+  }
+
+  .billContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .billLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .billInput {
+    padding: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    border-radius: 5px;
+    background-image: url("images/icon-dollar.svg");
+    background-size: 12px 12px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    text-align: right;
+    outline-color: hsl(172, 67%, 45%);
+    font-family: "Space Mono", monospace;
+  }
+
+  .selectContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selectLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .buttonsContainer {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .buttonTip {
+    padding: 7px 15px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonTip.selected {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  .customInput {
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: hsl(186, 14%, 43%);
+    outline-color: hsl(172, 67%, 45%);
+    text-align: right;
+    font-family: "Space Mono", monospace;
+  }
+
+  .peopleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .peopleLabel {
+    color: hsl(186, 14%, 43%);
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .peopleInput {
+    background-color: hsl(189, 41%, 97%);
+    border: 0;
+    padding: 10px;
+    background-image: url("images/icon-person.svg");
+    background-size: 12px 12px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    outline-color: hsl(172, 67%, 45%);
+    text-align: right;
+    font-family: "Space Mono", monospace;
+  }
+
+  .resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 10px;
+    padding: 30px;
+    width: 300px;
+  }
+
+  .resultTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tipPersonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .tipPersonLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .resultlabel {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .person {
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .totalPerPersonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .totalPersonLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reset {
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+  }
+}
